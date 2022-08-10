@@ -91,14 +91,18 @@ multiqc QC_reports/
 
 ##using samtools
 conda install -c bioconda samtools
+
 ##in the alignment directory
 samtools view -S -b ACBarrie.sam > sample_ACBarrie.bam
+
 ##to view the top 5
 samtools view sample_ACBarrie.bam | head -n 5
+
 ## to sort te files
 samtools sort sample_ACBarrie.bam -o sample_ACBarrie_sorted.bam
+
 ##to view the sorted file
-##samtools view sample_ACBarrie_sorted.bam | head -n 5
+samtools view sample_ACBarrie_sorted.bam | head -n 5
 
 
                                                                                                                                                                                                                                                              
